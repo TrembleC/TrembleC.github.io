@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F01%2F05%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>Testing</category>
+      </categories>
+      <tags>
+        <tag>Testing</tag>
+        <tag>Another Tag</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小程序功能实现]]></title>
+    <url>%2F2018%2F01%2F04%2F%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0%2F</url>
+    <content type="text"><![CDATA[小程序功能实现 点击多个button按钮改变已选按钮样式wxml1&lt;button type=&quot;&#123;&#123;item.id == selectedIds[item.id] ? &apos;primary&apos; : &apos;default&apos;&#125;&#125;&quot; wx:for=&quot;&#123;&#123;items&#125;&#125;&quot; wx:key=&quot;&#123;&#123;item.id&#125;&#125;&quot; bindtap=&quot;selectType&quot; data-id=&quot;&#123;&#123;item.id&#125;&#125;&quot;&gt;&#123;&#123;item.name&#125;&#125;&lt;/button&gt; js12345678910111213141516171819202122232425262728 data: &#123; items:[ &#123;name:"test1"&#125;, &#123;name:"test2"&#125;, &#123;name:"test3"&#125;, ] selectedIds: &#123;&#125;, id: "", &#125;, selectType: function(e) &#123; let &#123; key, index, id, &#125; = e.target.dataset; let &#123; selectedTypes, rangeTypes, selectedIds &#125; = this.data; selectedIds[id] = id this.setData(&#123; id: id, selectedIds: selectedIds &#125;)&#125;]]></content>
+      <categories>
+        <category>小程序</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+        <tag>wxAPP</tag>
+      </tags>
+  </entry>
+</search>
